@@ -54,7 +54,7 @@ const Chat = () => {
         console.log("aaya");
         socket.off();
     }
- 
+//  eslint-disable-next-line react-hooks/exhaustive-deps
    },[]);
 
    useEffect(()=>{
