@@ -10,7 +10,7 @@ import closeIcon from "../../images/closeIcon.png";
 
 
 let socket;
-const ENDPOINT ="http://localhost:4500/";    
+const ENDPOINT ="https://soaham-chat-app.herokuapp.com/";    
 
 const Chat = () => {
      
@@ -55,7 +55,7 @@ const Chat = () => {
         socket.off();
     }
  
-   }, []);
+   },[]);
 
    useEffect(()=>{
      socket.on('sendMessage',(data)=>{
